@@ -1,37 +1,114 @@
-header{
+* {
+  margin: 5;
+  padding: 0;
+}
+
+header {
   text-align: center;
   padding: 20px;
-  background-color:rgb(0, 0, 0);
+  text-align: left;
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    352deg,
+    rgb(0, 0, 0) 53%,
+    rgba(110, 110, 110, 1) 54%,
+    rgba(98, 98, 98, 1) 56%,
+    rgba(255, 83, 95, 1) 59%
+  );
+
   border-style: groove;
   border-color: grey;
   border-width: 6px;
+  padding: 30px;
 }
-nav > a {
-  text-decoration: none;
-  padding-left: 20px;
-  padding-right:20px;
-  color: rgb(255, 83, 95 ) ;
+hr {
+  color: rgb(255, 83, 95);
 }
-body{
- background-color: black;
-}
+
 h1 {
-  color: red;
-  background-color: gray;
- padding: 20px;
+  color: black;
+  padding: 20px;
   text-align: center;
+  text-decoration: underline;     
+  text-decoration-color: black;  
+
 }
+ h3, h4{
+    text-decoration: underline;     
+    text-decoration-color:rgb(255, 83, 95);  
+
+}
+
+
+
 img {
-  text-align: center;
-
+  border-radius: 10px;
+  justify-items: center;
+  text-align: 1rem;
+  padding: 15px;
+  border: solid rgb(255, 83, 95) 2px;
 }
 
 
-p{
+
+.image{
+ -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: ease-in 0.4s all;
+  text-align: center;
+}
+
+.image:hover{
+ -webkit-filter: none;
+ filter: none;
+  
+}
+.mMouse:hover{
+ -webkit-filter: none;
+ filter: none;
+  
+}
+
+.mMouse{
+ text-align: right;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: ease-in 0.3s all;
+
+}
+
+p {
+
   text-align: center;
   font-size: 17.5555px;
+  color: rgb(255, 83, 95);
+  border: solid rgb(255, 83, 95) 2px;
+  border-radius: 10px;
+  padding: 2%;
+
+}
+/* line-height: 80px; */
+ol, ul {
+  color: rgb(255, 83, 95);
 }
 
 
 
+.sideBySide{
+/* border: solid rgb(86, 83, 255) 2px; */
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+
+}
 
